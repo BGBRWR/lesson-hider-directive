@@ -13,14 +13,6 @@ angular.module('directivePractice').directive('lessonHider', function(){
     link: function(scope, element, attrs) {
       var checked = false;
       scope.check = false;
-      scope.checkCheck = function() {
-        if ((element.css) === (element.css('text-decoration', 'checked'))){
-          return 'checked';
-        }
-        else {
-          return '';
-        }
-      };
       scope.clicked = function(){
         if (checked) {
           element.css('text-decoration', 'none');
